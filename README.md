@@ -68,7 +68,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Author
 
-[Your Name](https://github.com/your-username)
+[RAHUL KESARWANI](https://github.com/your-username)
 
 ---
 
