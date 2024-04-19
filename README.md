@@ -1,57 +1,75 @@
-# Exercise Tracker
-Certainly! Here's a simple README file for your GitHub repository:
+Creating a README file for your GitHub repository can be very helpful for others to understand your project quickly. Here's a basic template you can use:
 
 ---
 
-# Push-up Counter using MediaPipe Pose
+# Exercise Tracker and Counter using MediaPipe and OpenCV
 
-This project utilizes [MediaPipe Pose](https://google.github.io/mediapipe/solutions/pose) to count push-ups in real-time using a webcam. It tracks the movement of the shoulders to detect push-up repetitions accurately.
+This project utilizes the MediaPipe library along with OpenCV to detect human poses in real-time from a webcam feed and count exercises such as push-ups and squats.
 
 ## Features
-- Counts push-ups based on shoulder movement.
-- Provides real-time feedback on the number of push-ups completed.
-- Saves a video recording of the push-up session.
+
+- Real-time pose detection using the MediaPipe library.
+- Counting of push-ups, squats, and other exercises based on pose analysis.
+- Visual feedback on the screen displaying pose landmarks and exercise counts.
+- Video recording capability to save the exercise session.
+- Audio feedback for exercise counts.
 
 ## Requirements
+
 - Python 3.x
-- OpenCV (cv2)
+- OpenCV
 - MediaPipe
 - NumPy
 
 ## Installation
-1. Clone this repository:
 
-    ```
-    git clone https://github.com/yourusername/push-up-counter.git
-    ```
+1. Clone the repository:
 
-2. Install the required dependencies:
+```bash
+git clone https://github.com/your-username/your-repository.git
+```
 
-    ```
-    pip install opencv-python mediapipe numpy
-    ```
+2. Install dependencies:
+
+```bash
+pip install opencv-python mediapipe numpy
+```
 
 ## Usage
-1. Run the `pushup_counter.py` script:
 
-    ```
-    python pushup_counter.py
-    ```
+1. Run the script:
 
-2. Follow the instructions on the terminal window.
-3. Perform push-ups in front of your webcam.
-4. See the real-time count of push-ups on the screen.
+```bash
+python pose_detection.py
+```
 
-## Customization
-- You can adjust the `cooldown_time` variable in the code to change the cooldown period between each push-up repetition detection.
-- Modify the `output_filename` variable to change the name of the output video file.
+2. Make sure your webcam is connected and positioned properly.
 
-## Credits
-This project was inspired by [MediaPipe](https://google.github.io/mediapipe/), an open-source framework developed by Google.
+3. Perform exercises in front of the webcam, and the program will count them accordingly.
+
+4. Press 'q' to quit the program.
+
+## Configuration
+
+- You can adjust the confidence thresholds for pose detection (`min_detection_confidence` and `min_tracking_confidence`) inside the script according to your requirements.
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [MediaPipe](https://mediapipe.dev/)
+- [OpenCV](https://opencv.org/)
+
+## Author
+
+[Your Name](https://github.com/your-username)
 
 ---
 
-Feel free to customize it further according to your preferences! Let me know if you need any more help.
+Feel free to customize it further based on your project's specific details and requirements!
